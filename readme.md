@@ -20,10 +20,22 @@ yarn add -D tailwindcss-break
 ## Usage
 
 ```js
-require('tailwindcss-break')(['responsive'])
+require('tailwindcss-break')({
+    widows: [1, 2, 3],
+    orphans: [1, 2, 3],
+    variants: [],
+})
 ```
 
 ```css
+.orphans-1 { orphans: 1; }
+.orphans-2 { orphans: 2; }
+.orphans-3 { orphans: 3; }
+
+.widows-1 { widows: 1; }
+.widows-2 { widows: 2; }
+.widows-3 { widows: 3; }
+
 .box-slice { box-decoration-break: slice; }
 .box-clone { box-decoration-break: clone; }
 

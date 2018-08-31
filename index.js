@@ -1,5 +1,19 @@
-module.exports = function (variants) {
-  return function ({ addUtilities }) {
+const _ = require('lodash')
+
+module.exports = function (options = {}) {
+  return function ({ addUtilities, config, e }) {
+    let { orphans, widows, variants } = _.defaults(options, {})
+
+    orphans = _.map(orphans, (count) => ({
+      [`.${e(`orphans-${count}`)}`]: { 'orphans': count },
+    }))
+
+    widows = _.map(widows, (count) => ({
+      [`.${e(`widows-${count}`)}`]: { 'widows': count },
+    }))
+
+    addUtilities(orphans, variants)
+    addUtilities(widows, variants)
     addUtilities(
       {
         // Box Decoration Break
