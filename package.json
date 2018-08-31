@@ -1,0 +1,27 @@
+{
+  "name": "tailwindcss-break",
+  "version": "0.1.0",
+  "description": "Break utilities for Tailwind CSS.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacknug/tailwindcss-break.git"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "tailwind css",
+    "tailwindcss-plugin",
+    "plugin"
+  ],
+  "author": {
+    "name": "Nestor Vera",
+    "email": "nestorvera@me.com",
+    "url": "https://nestor.rip/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hacknug/tailwindcss-break/issues"
+  },
+  "homepage": "https://github.com/hacknug/tailwindcss-break#readme"
+}
