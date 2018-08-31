@@ -2,6 +2,10 @@ module.exports = function (variants) {
   return function ({ addUtilities }) {
     addUtilities(
       {
+        // Box Decoration Break
+        '.box-slice': { boxDecorationBreak: 'slice' },
+        '.box-clone': { boxDecorationBreak: 'clone' },
+
         // Break Before: Generic Values
         '.bb-auto': { breakBefore: 'auto' },
         '.bb-avoid': { breakBefore: 'avoid' },

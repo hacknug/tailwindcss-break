@@ -24,6 +24,9 @@ require('tailwindcss-break')(['responsive'])
 ```
 
 ```css
+.box-slice { box-decoration-break: slice; }
+.box-clone { box-decoration-break: clone; }
+
 .bb-auto { break-before: auto; }
 .bb-avoid { break-before: avoid; }
 .bb-avoid-page { break-before: avoid-page; }
