@@ -20,11 +20,36 @@ yarn add -D tailwindcss-break
 ## Usage
 
 ```js
-require('tailwindcss-break')({
-    widows: [1, 2, 3],
-    orphans: [1, 2, 3],
-    variants: [],
-})
+// tailwind.config.js
+{
+  theme: { // defaults to these values
+    orphans: [ 1, 2, 3 ],
+    widows: [ 1, 2, 3 ],
+    boxDecorationBreak: [ 'slice', 'clone' ],
+    breakBefore: [
+        'auto', 'avoid', 'avoid-page', 'page', 'always', 'left', 'right',
+        'recto', 'verso', 'avoid-column', 'column', 'avoid-region', 'region',
+    ],
+    breakAfter: [
+        'auto', 'avoid', 'avoid-page', 'page', 'always', 'left', 'right',
+        'recto', 'verso', 'avoid-column', 'column', 'avoid-region', 'region',
+    ],
+    breakInside: [ 'auto', 'avoid', 'avoid-page', 'avoid-column', 'avoid-region' ],
+  },
+
+  variants: { // all the following default to ['responsive']
+    orphans: ['responsive'],
+    widows: ['responsive'],
+    boxDecorationBreak: ['responsive'],
+    breakBefore: ['responsive'],
+    breakAfter: ['responsive'],
+    breakInside: ['responsive'],
+  },
+
+  plugins: [
+    require('tailwindcss-break'), // no options to configure
+  ],
+}
 ```
 
 ```css
