@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-break",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Break utilities for Tailwind CSS.",
   "keywords": [
     "plugin",
