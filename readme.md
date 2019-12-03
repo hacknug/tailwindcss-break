@@ -47,7 +47,7 @@ yarn add -D tailwindcss-break
   },
 
   plugins: [
-    require('tailwindcss-break'), // no options to configure
+    require('tailwindcss-break')(), // no options to configure
   ],
 }
 ```
